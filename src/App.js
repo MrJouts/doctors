@@ -7,11 +7,13 @@ import {
 
 import Login from './pages/Login'
 
+// import Button from '@material-ui/core/Button';
+
 function App() {
   return (
     <Router>
       <div>
-        <nav>
+        {/* <nav>
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -23,7 +25,8 @@ function App() {
               <Link to="/users">Users</Link>
             </li>
           </ul>
-        </nav>
+        </nav> */}
+
 
         {/* A <Switch> looks through its children <Route>s and
           renders the first one that matches the current URL. */}
@@ -31,9 +34,6 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          {/* <Route path="/">
-            <Home />
-          </Route> */}
         </Switch>
       </div>
     </Router>
